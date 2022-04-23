@@ -10,7 +10,8 @@ module.exports = {
             .select('name')
             .first();
             
-
+        // const ong = await connection('ongs').where('id', id).delete();
+        // console.log("Deletado: " + id);
         if(!ong){
             return response.status(400).json({error: 'No ONG found with this ID'});
         }
